@@ -1,5 +1,6 @@
 package com.applicationroom
 
+import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -22,6 +23,8 @@ class MainViewModel: ViewModel() {
             MyCoroutines(userDao).delete(user)
         }
     }
+
+    //val allNotes: LiveData<List<Note>> = notesDao.getAllNotes()
 
     val savedUsers = MutableLiveData<List<User>>()
 
