@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity() {
 
             if(userName.isNotEmpty()){
                 mainViewModel.saveUser(User(
-                    "numeroid3",
+                    "$userName"+"id",
                     "$userName",
                     1.71,
                     71.1,
